@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+      
+        <div class="row mt-1">
+            <% for (var i=0; i<courses.length;i++) {%>
+                <div class="mt-3 col-sm-6 col-md-4 "><div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="<%=courses[i].image%>" alt="Card image cap"> 
+                    <div class="card-body">
+                        <a href="courses/<%=courses[i].slug%>">
+                      <h5 class="card-title"><%=courses[i].name%></h5></a>
+                      <p class="card-text"><%=courses[i].description %> </p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  
+                    </div>
+                  </div></div>
+                
+               <% } %>
+            
+       </div>
+        
+      
+       
+</body>
+</html>
